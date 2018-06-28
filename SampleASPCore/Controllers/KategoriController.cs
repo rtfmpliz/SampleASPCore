@@ -27,10 +27,20 @@ namespace SampleASPCore.Controllers
         //    connStr = config.GetConnectionString("DefaultConnection"); 
         //}
         // GET: Kategori
+
+        [HttpPost]
+        public IActionResult Search(string keyword)
+        {
+            var results = _kategori.SearchByNama(keyword);
+            return View("Index", results);
+
+        }
         public ActionResult Index()
         {
 
             //cek data temp data
+
+
 
             if (TempData["Pesan"] != null)
                 ViewBag.Pesan = TempData["Pesan"];
@@ -208,4 +218,6 @@ namespace SampleASPCore.Controllers
             }
         }
     }
+
+
 }

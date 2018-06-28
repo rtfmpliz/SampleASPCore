@@ -58,7 +58,7 @@ namespace SampleASPCore.DAL
 
                 throw new Exception(sqlEx.Message);
             }
-    
+
         }
 
         public IEnumerable<Kategori> GetAll()
@@ -75,7 +75,7 @@ namespace SampleASPCore.DAL
                 //SqlCommand cmd
 
             }
-           // return View(results); // disabut melemparkan model, selainnya ini menggunakan ViewDAta        
+            // return View(results); // disabut melemparkan model, selainnya ini menggunakan ViewDAta        
         }
 
         public Kategori GetById(string id)
@@ -90,6 +90,17 @@ namespace SampleASPCore.DAL
 
         }
 
+        public IEnumerable<Kategori> SearchByNama(string nama)
+        {
+            using (SqlConnection conn = new SqlConnection(connStr))
+            {
+                string strSql = @"select * from Kategori where NamaKategori like @NamaKategori order by NamaKategori desc";
+                var param = new { NamaKategori = "%" + nama + "%" };
+                var results = conn.Query<Kategori>(strSql, param);
+                return results;
+
+            }
+        }
         public void Update(string id, Kategori kategori)
         {
             //return Content(id.ToString() + " " + kategori.NamaKategori );
@@ -119,4 +130,6 @@ namespace SampleASPCore.DAL
 
 
     }
+
+
 }

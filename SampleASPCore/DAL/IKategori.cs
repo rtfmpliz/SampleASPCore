@@ -9,6 +9,6 @@ namespace SampleASPCore.DAL
 {
     public interface IKategori : ICrud<Kategori>
     {
-        IEnumerable<Kategori> SearchByNama(string nama);
+        IEnumerable<Kategori> SearchByNama(string nama); //diimplementasi di DAL
     }
 }

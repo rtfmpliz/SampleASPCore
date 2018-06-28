@@ -37,3 +37,4 @@ C:\Users\user\source\repos\SampleASPCore\SampleASPCore\obj\Debug\netcoreapp2.1\R
 C:\Users\user\source\repos\SampleASPCore\SampleASPCore\obj\Debug\netcoreapp2.1\Razor\Views\Kategori\Create.g.cshtml.cs
 C:\Users\user\source\repos\SampleASPCore\SampleASPCore\obj\Debug\netcoreapp2.1\Razor\Views\Kategori\Edit.g.cshtml.cs
 C:\Users\user\source\repos\SampleASPCore\SampleASPCore\obj\Debug\netcoreapp2.1\Razor\Views\Kategori\Delete.g.cshtml.cs
+C:\Users\user\source\repos\SampleASPCore\SampleASPCore\obj\Debug\netcoreapp2.1\Razor\Views\Barang\Index.g.cshtml.cs
