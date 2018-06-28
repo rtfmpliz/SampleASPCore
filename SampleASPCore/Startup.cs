@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SampleASPCore.DAL;
+using SampleASPCore.Models;
 
 namespace SampleASPCore
 {
@@ -30,8 +32,10 @@ namespace SampleASPCore
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
-
+            //mendaftarkan kategori yg digunakan <KAtegori> = Tipe adalah T, 
+            services.AddScoped<IKategori,KategoriDAL>();
+            //services.AddScoped<ICrud<Kategori>, KategoriDAL>(); //asliny asebelum membuat Ikategori
+            //menggunakan AddScoped bedanya AddScope dan Singleton ... scoped untuk object yg kita inject, kita daftar sekali bisa dipakai untuk controller lain
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

@@ -80,7 +80,7 @@ using SampleASPCore.Models;
         ");
             EndContext();
             BeginContext(435, 1117, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "911b0ed975f34bf9ac5ebb8e7bfd2c38", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "390fe4374fe246dc89666fc57cf2a57e", async() => {
                 BeginContext(465, 155, true);
                 WriteLiteral("\r\n            <div class=\"form-group\">\r\n                <label for=\"nik\">NIK</label>\r\n                <input type=\"text\" class=\"form-control\"  name=\"Nik\"> ");
                 EndContext();
