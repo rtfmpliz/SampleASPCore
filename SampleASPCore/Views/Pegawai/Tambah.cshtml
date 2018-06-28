@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewData["Title"] = "Tambah";
+}
+
+<div>
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active">Blank Page</li>
+            </ol>
+
+        </div>
+<h2>Tambah Pegawai</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="nik">NIK</label>
+                <input type="text" class="form-control"  name="Nik"> @*bukan id=bill1 tapi name ---- name harus sama dengan property supaya bisa idbinding*@
+            </div>
+
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" class="form-control"  name="Nama"> 
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <input type="text" class="form-control" name="Alamat"> 
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control"  name="Email"> 
+            </div>
+
+            <div class="form-group">
+                <label for="notelp">No Telp</label>
+                <input type="tel" class="form-control"  name="NoTelp"> 
+            </div>
+
+            <button type="submit" class="btn btn-primary" >Submit</button>
+        </form>
+    </div>
+</div>
+

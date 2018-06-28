@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Index"; /*jika viewbag / viewbag data muncul error not avalilable tin this contec, closed buka lg*/
+}
+
+<h2>
+    Simple Math
+</h2>
+<div class="col-md-6">
+   
+
+    <form action="/Math/Index" method="post">       @*// kalo gak ditulis action pun ke dirinya sendiri*@
+
+        <div class="form-group">
+            <label for="bil1">Bilangan 1</label>
+            <input type="number" class="form-control" value="@ViewBag.bil1" name="bil1"> @*bukan id=bill1 tapi name*@
+        </div>
+        <div class="form-group">
+            <label for="bil1">Bilangan 2</label>
+            <input type="number" class="form-control" value="@ViewBag.bil2"name="bil2"> @*untuk mengembalikan gunakan value=@ViewBag  dari controller*@ 
+        </div>
+        <div class="form-group">
+
+            <input type="radio" name="rdOperator" value="Tambah" />Tambah
+            <input type="radio" name="rdOperator" value="Kurang" />Kurang
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="hasil">Hasil :</label>
+            <input type="number" name="hasil" value="@ViewBag.hasil" />
+        </div>
+    
+        <button type="submit" class="btn btn-default">Hitung</button>
+    </form>
+
+</div>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

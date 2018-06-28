@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href=/Home/Index>Home PAge</a>
+    </li>
+    <li class="breadcrumb-item active">Tambah Kategori</li>
+</ol>
+<div class="row">
+    <div class="col-md-6">
+        <p>@Html.Raw(ViewBag.Error)</p>
+        <form method="post">
+            <div class="form-group">
+                <label for="NamaKategori">Nama Kategori</label>
+                <input type="text" class="form-control" name="NamaKategori">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

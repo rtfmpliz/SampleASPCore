@@ -1,0 +1,26 @@
+﻿@model SampleASPCore.Models.Kategori
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href=/Home/Index>Home PAge</a>
+    </li>
+    <li class="breadcrumb-item active">Edit Kategori</li>
+</ol>
+<div class="row">
+    <div class="col-md-6">
+        <p>@Html.Raw(ViewBag.Error)</p>
+        <form method="post">
+            <div class="form-group">
+                <input type="hidden" name="id" value="@Model.KategoriID" /> 
+    @*jika untuk diedit walaupun tidka diisin kategoriID tapi tetap dikirimkan butuh kategori id yg mana*@
+                <label for="NamaKategori">Nama Kategori</label>
+                <input type="text" class="form-control" value="@Model.NamaKategori" name="NamaKategori">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

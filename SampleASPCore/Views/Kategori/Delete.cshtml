@@ -1,0 +1,30 @@
+﻿@model SampleASPCore.Models.Kategori
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href=/Home/Index>Home PAge</a>
+    </li>
+    <li class="breadcrumb-item active">Delete Kategori</li>
+</ol>
+<div class="row">
+    <div class="col-md-6">
+        <p>@Html.Raw(ViewBag.Error)</p>
+
+        <p>Apakah anda yain untuk mendelete Kategori dengan nana @Model.NamaKategori</p> 
+        @*bisa diganti javascript tapi tidak aman, orang kalo kalo tahu alamatnya bisa diganti*@
+        <input type="hidden" name="id" value="@Model.KategoriID" />
+        @*jika untuk diedit walaupun tidka diisin kategoriID tapi tetap dikirimkan butuh kategori id yg mana*@
+        <form method="post">
+
+            <input type="hidden" value="@Model.KategoriID" name="id">
+            <input type="hidden" value="@Model.NamaKategori" name="NamaKategori">
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+
+

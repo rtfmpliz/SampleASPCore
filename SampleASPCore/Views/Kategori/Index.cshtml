@@ -1,0 +1,45 @@
+﻿
+@model IEnumerable<SampleASPCore.Models.Kategori> 
+    @*untuk menambahakan intellisense pad aAKtegori, dan karena bentuk list harus ditambah IEnumerable<>*@
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Daftar Kategori</h2>
+
+
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href=/Home/Index>Home PAge</a>
+    </li>
+    <li class="breadcrumb-item active">Daftar Kategori</li>
+</ol>
+
+<div class="row">
+    <div class="col-md-6">
+        <p>@Html.Raw(ViewBag.Pesan)</p>
+        <a href="/Kategori/Create">Tambah KAtegori</a>
+        <table class="table table-striped">
+            <tr>
+                <th>KategoriID</th>
+                <th>Nama KAtegori</th>
+                <th></th>
+                <th></th>
+
+            </tr>
+            @foreach (var kat in Model) //nama nya Model tidka bisa dirubah
+            {
+            <tr>
+                <td>@kat.KategoriID</td>
+                <td>@kat.NamaKategori</td>
+                <td><a asp-action="Edit" asp-route-id="@kat.KategoriID" class="btn btn-warning">edit</a></td>
+                <td><a asp-action="Delete" asp-route-id="@kat.KategoriID" class="btn btn-danger">delete</a></td>
+
+            </tr>
+            }
+        </table>
+    </div>
+</div>
+
