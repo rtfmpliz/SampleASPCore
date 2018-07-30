@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SampleASPCore.DAL;
 using SampleASPCore.Models;
 
 namespace SampleASPCore.Controllers
 {
     public class PegawaiController : Controller
     {
+        private IPegawai _pegawai;
+        public PegawaiController(IPegawai pegawai)
+        {
+            _pegawai = pegawai;
+        }
         public IActionResult Index()
         {
-            return View();
+            var results = _pegawai.GetAll();
+            return View(results);
         }
 
         public IActionResult Tambah()

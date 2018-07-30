@@ -98,7 +98,7 @@ using SampleASPCore.Models;
             WriteLiteral("</p>\r\n        <a href=\"/Kategori/Create\">Tambah KAtegori</a>\r\n        ");
             EndContext();
             BeginContext(588, 355, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b31980b7d21b41779cb449310f057bc8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7cd6ac8a77164220a05cc194fb3dcb14", async() => {
                 BeginContext(648, 288, true);
                 WriteLiteral(@"
             <div class=""form-group"">
@@ -160,7 +160,7 @@ using SampleASPCore.Models;
             WriteLiteral("</td>\r\n                    <td>");
             EndContext();
             BeginContext(1392, 84, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb363308913c453b8ac62779b0f6a52e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d291fa09afa041cfae45acbca597ef56", async() => {
                 BeginContext(1468, 4, true);
                 WriteLiteral("edit");
                 EndContext();
@@ -196,7 +196,7 @@ using SampleASPCore.Models;
             WriteLiteral("</td>\r\n                    <td>");
             EndContext();
             BeginContext(1507, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df2cf1d44fc24a17b10f450c63dfd367", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b37c32f291594b1fa96aa4b23814d22b", async() => {
                 BeginContext(1584, 6, true);
                 WriteLiteral("delete");
                 EndContext();

@@ -65,7 +65,7 @@ using SampleASPCore.Models;
             WriteLiteral("\r\n<h2>\r\n    Simple Math\r\n</h2>\r\n<div class=\"col-md-6\">\r\n   \r\n\r\n    ");
             EndContext();
             BeginContext(202, 1045, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c6782d0afc641d194fd583803a9ea55", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c670c70f54b94be6bd2d1863f732f268", async() => {
                 BeginContext(243, 7, true);
                 WriteLiteral("       ");
                 EndContext();

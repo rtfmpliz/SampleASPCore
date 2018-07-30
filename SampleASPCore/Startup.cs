@@ -34,6 +34,7 @@ namespace SampleASPCore
             });
             //mendaftarkan kategori yg digunakan <KAtegori> = Tipe adalah T, 
             services.AddScoped<IKategori,KategoriDAL>();
+            services.AddScoped<IRank, RankDAL>();
             //services.AddScoped<ICrud<Kategori>, KategoriDAL>(); //asliny asebelum membuat Ikategori
             //menggunakan AddScoped bedanya AddScope dan Singleton ... scoped untuk object yg kita inject, kita daftar sekali bisa dipakai untuk controller lain
             services.AddScoped<IBarang, BarangDAL>();

@@ -63,7 +63,7 @@ using SampleASPCore.Models;
             WriteLiteral("<ol class=\"breadcrumb\">\r\n    <li class=\"breadcrumb-item\">\r\n        <a href=/Barang/Index>Home Page</a>\r\n    </li>\r\n    <li class=\"breadcrumb-item active\">Daftar Kategori</li>\r\n</ol>\r\n\r\n\r\n\r\n<div class=\" col-md-12\">\r\n    <p>\r\n        ");
             EndContext();
             BeginContext(332, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb57eaa673c34b3d81502ddb7e0b2107", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b411903df8684a3ba24b107fbf4f8027", async() => {
                 BeginContext(355, 10, true);
                 WriteLiteral("Create New");
                 EndContext();

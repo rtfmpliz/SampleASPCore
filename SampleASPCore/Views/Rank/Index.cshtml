@@ -1,0 +1,46 @@
+﻿@model IEnumerable<SampleASPCore.Models.Rank>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Daftar Rank</h2>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href=/Home/Index>Rank</a>
+    </li>
+    <li class="breadcrumb-item active">Daftar Rank</li>
+</ol>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RankID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RankName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RankID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RankName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

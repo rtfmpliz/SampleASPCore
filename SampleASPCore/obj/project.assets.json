@@ -12260,7 +12260,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Users\\administrator\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -12269,14 +12269,14 @@
       "projectUniqueName": "C:\\Users\\user\\source\\repos\\SampleASPCore\\SampleASPCore\\SampleASPCore.csproj",
       "projectName": "SampleASPCore",
       "projectPath": "C:\\Users\\user\\source\\repos\\SampleASPCore\\SampleASPCore\\SampleASPCore.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\administrator\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\user\\source\\repos\\SampleASPCore\\SampleASPCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
